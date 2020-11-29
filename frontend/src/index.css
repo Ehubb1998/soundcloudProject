@@ -8,26 +8,30 @@
     color: #999;
     position: fixed;
     transition: height .2s ease-in-out;
+    display: flex;
+    justify-content: left;
 }
 
 .navBar_left {
     display: block;
     visibility: visible;
     float: left;
+    width: 416px;
+    height: 46px;
 }
 
-.liText > li > a.selected {
+.ulText > li > a.hover {
     color: #fff;
     background-color: #111;
     outline: 0;
 }
-.liText > li {
+.ulText > li {
     float: left;
     position: relative;
 }
 
 
-.liText > li > a {
+.ulText > li > a {
     display: block;
     padding: 12px 0;
     width: 104px;
@@ -35,5 +39,15 @@
     border-right: 1px solid #111;
     box-sizing: border-box;
     text-align: center;
+}
+
+#logo {
+    background-image: url("./soundcloudLogo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    width: 75px;
+    height: 46px;
 }
 
