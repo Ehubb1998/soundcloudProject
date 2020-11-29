@@ -1,0 +1,39 @@
+/* TODO Add site wide styles */
+
+#navBar {
+    width: 100%;
+    height: 46px;
+    background: #333;
+    z-index: 1000;
+    color: #999;
+    position: fixed;
+    transition: height .2s ease-in-out;
+}
+
+.navBar_left {
+    display: block;
+    visibility: visible;
+    float: left;
+}
+
+.liText > li > a.selected {
+    color: #fff;
+    background-color: #111;
+    outline: 0;
+}
+.liText > li {
+    float: left;
+    position: relative;
+}
+
+
+.liText > li > a {
+    display: block;
+    padding: 12px 0;
+    width: 104px;
+    height: 46px;
+    border-right: 1px solid #111;
+    box-sizing: border-box;
+    text-align: center;
+}
+

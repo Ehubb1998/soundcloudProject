@@ -1,0 +1,29 @@
+{
+    "development": {
+        "username": "soundcloudowner",
+        "password": "ehubb15",
+        "database": "sound",
+        "host": "127.0.0.1",
+        "dialect": "postgres",
+        "seederStorage": "sequelize",
+        "operatorsAliases": false
+    },
+    "test": {
+        "username": "soundcloudowner",
+        "password": "ehubb15",
+        "database": "soundcloudbase_test",
+        "host": "127.0.0.1",
+        "dialect": "postgres",
+        "seederStorage": "sequelize",
+        "operatorsAliases": false
+    },
+    "production": {
+        "username": "soundcloudowner",
+        "password": "ehubb15",
+        "database": "soundcloudbase_production",
+        "host": "127.0.0.1",
+        "dialect": "postgres",
+        "seederStorage": "sequelize",
+        "operatorsAliases": false
+    }
+}

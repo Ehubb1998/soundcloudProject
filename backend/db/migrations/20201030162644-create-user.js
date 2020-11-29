@@ -8,10 +8,15 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER,
       },
-      username: {
+      userName: {
         type: Sequelize.STRING(30),
         allowNull: false,
         unique: true,
+      },
+      firstName: {
+        type: Sequelize.STRING(30),
+        allowNull: false,
+        unique: false,
       },
       email: {
         type: Sequelize.STRING(256),
@@ -22,16 +27,20 @@ module.exports = {
         type: Sequelize.STRING.BINARY,
         allowNull: false,
       },
+      // playlist_id: {
+      //   type: Sequelize.INTEGER,
+      //   allowNull: true,
+      //   unique: false,
+      //   references: { model: "Playlists" }
+      // },
       createdAt: {
         allowNull: false,
-        type: Sequelize.DATE,
-        defaultValue: Sequelize.fn("now"),
+        type: Sequelize.DATE
       },
       updatedAt: {
         allowNull: false,
-        type: Sequelize.DATE,
-        defaultValue: Sequelize.fn("now"),
-      },
+        type: Sequelize.DATE
+      }
     });
   },
   down: (queryInterface, Sequelize) => {
