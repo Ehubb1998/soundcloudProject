@@ -1,5 +1,24 @@
 /* TODO Add site wide styles */
 
+.splashDiv {
+    background-image: url("./splashpageLogo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 500px;
+    height: 300px;
+}
+
+.splashDiv:hover {
+    background-image: url("./soundcloudLogo2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 535px;
+    height: 305px;
+    cursor: pointer;
+}
+
 #navBar {
     width: 100%;
     height: 46px;

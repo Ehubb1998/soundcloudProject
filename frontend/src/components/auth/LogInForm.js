@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { connect } from 'react-redux';
+import { useHistory } from 'react-router-dom';
 // import Form from 'react-bootstrap/Form';
 // import Button from 'react-bootstrap/Button';
 import { updateUserNameValue, updatePasswordValue, logIn, demo, demoValues } from '../../store/actions/auth';
 
 const LogInForm = (props) => {
+    const history = useHistory();
     const [userName, setUserName] = useState("");
     const [password, setPassword] = useState("");
     
@@ -53,6 +55,10 @@ const LogInForm = (props) => {
         props.demo();
     }
 
+    const signUpButton = () => {
+        history.push("/sign-up");
+    }
+
     return (
         <>
             <div className="errDiv" style={{ display: "flex", justifyContent: "space-between" }}>
@@ -63,6 +69,9 @@ const LogInForm = (props) => {
                     <button onClick={handleSubmit} type="submit" className="log-in-button">Submit</button>
                     <span style={{ marginLeft: "10px" }}>
                         <button className="demoButton" onClick={handleDemo} type="submit">Demo</button>
+                    </span>
+                    <span style={{ marginLeft: "10px" }}>
+                        <button className="demoButton" onClick={signUpButton} type="submit">Sign-Up</button>
                     </span>
                 </form>
             </div>

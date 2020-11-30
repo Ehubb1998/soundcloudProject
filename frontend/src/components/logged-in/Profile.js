@@ -1,17 +1,17 @@
 import React from 'react';
-import NavBar from './NavBar';
+import NavBar from '../NavBar';
 
-const Homepage = (props) => {
+const Profile = (props) => {
     return (
         <>
             <div style={{ height: "46px" }}>
                 <NavBar />
             </div>
             <div>
-                <h1>Homepage</h1>
+                <h1>Profile</h1>
             </div>
         </>
     )
 }
 
-export default Homepage;
+export default Profile;

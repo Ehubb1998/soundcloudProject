@@ -53,7 +53,6 @@ export const signUp = (userName, firstName, email, password, confirmedPassword) 
             window.localStorage.setItem("SOUNDCLOUD_ACCESS_TOKEN", token);
             window.localStorage.setItem("SOUNDCLOUD_USER_ID", id);
 
-            let userName1;
             const userId = window.localStorage.getItem("SOUNDCLOUD_USER_ID");
 
             const user1 = async () => {
@@ -66,8 +65,7 @@ export const signUp = (userName, firstName, email, password, confirmedPassword) 
                 const { userName } = await res.json();
                 window.localStorage.setItem("SOUNDCLOUD_USERNAME", userName);
                 // console.log(userName);
-                userName1 = userName;
-                window.location.href = `/selection/${userName1}`;
+                window.location.href = `/homepage`;
             }
             user1();
 
@@ -102,7 +100,6 @@ export const logIn = (userName, password) => {
             window.localStorage.setItem("SOUNDCLOUD_ACCESS_TOKEN", token);
             window.localStorage.setItem("SOUNDCLOUD_USER_ID", id);
 
-            let userName2;
             const userId = window.localStorage.getItem("SOUNDCLOUD_USER_ID");
             
             const user2 = async () => {
@@ -115,8 +112,7 @@ export const logIn = (userName, password) => {
                 const { userName } = await res.json();
                 window.localStorage.setItem("SOUNDCLOUD_USERNAME", userName);
                 // console.log(userName);
-                userName2 = userName;
-                window.location.href = `/homepage/${userName2}`;
+                window.location.href = `/homepage`;
             }
             user2();
             
@@ -148,7 +144,6 @@ export const demo = () => {
             window.localStorage.setItem("SOUNDCLOUD_ACCESS_TOKEN", token);
             window.localStorage.setItem("SOUNDCLOUD_USER_ID", id);
 
-            let userName3;
             const userId = window.localStorage.getItem("SOUNDCLOUD_USER_ID");
             
             const user3 = async () => {
@@ -161,8 +156,7 @@ export const demo = () => {
                 const { userName } = await res.json();
                 window.localStorage.setItem("SOUNDCLOUD_USERNAME", userName);
                 // console.log(userName);
-                userName3 = userName;
-                window.location.href = `/homepage/${userName3}`;
+                window.location.href = `/homepage`;
             }
             user3();
 
