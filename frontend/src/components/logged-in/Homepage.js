@@ -1,5 +1,6 @@
 import React from 'react';
 import NavBar from '../NavBar';
+// import BottomBar from './bar';
 
 const Homepage = (props) => {
     return (
@@ -9,9 +10,10 @@ const Homepage = (props) => {
             </div>
             <div>
                 <h1>Homepage</h1>
+                {/* <BottomBar /> */}
             </div>
         </>
     )
 }
 
-export default Homepage;
+export default Homepage; 
